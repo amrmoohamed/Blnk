@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCR Date Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">OCR Date Prediction Result</h1>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Prediction:</h4>
+            <p>Predicted Date: <strong id="predictedDate"></strong></p>
+            <p>Arabic Predicted Date: <strong id="predictedDateArabic"></strong></p>
+        </div>
+        <a href="http://127.0.0.1:8000/ExtractDate" class="btn btn-primary">Back to Upload</a>
+    </div>
+
+    <script>
+        // Parse the JSON data received from Django views
+        var predictionData = {{ prediction|safe }};
+
+        console.log("Prediction Data:", predictionData);
+
+        // Extract predicted date components
+        var predictedDay = predictionData.predicted_day;
+        var predictedMonth = predictionData.predicted_month;
+        var predictedYear = predictionData.predicted_year;
+        var predictedDayArabic = predictionData.predicted_day_arabic;
+        var predictedMonthArabic = predictionData.predicted_month_arabic;
+        var predictedYearArabic = predictionData.predicted_year_arabic;
+
+        // Create a formatted date string
+        var predictedDateStr = predictedDay + '/' + predictedMonth + '/' + predictedYear;
+        var predictedDateStrArabic = predictedYearArabic + '/' + predictedMonthArabic + '/' + predictedDayArabic;
+        // Display the predicted date in the HTML element
+        document.getElementById('predictedDate').textContent = predictedDateStr;
+        document.getElementById('predictedDateArabic').textContent = predictedDateStrArabic;
+    </script>
+</body>
+</html>

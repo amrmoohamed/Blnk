@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OCR Date Prediction Result</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="mb-4">OCR Date Prediction Result</h1>
+        <div class="alert alert-success" role="alert">
+            <h4 class="alert-heading">Prediction:</h4>
+            <p>Predicted Date: <strong>{{ prediction.predicted_day }}/{{ prediction.predicted_month }}/{{ prediction.predicted_year }}</strong></p>
+        </div>
+        <a href="/" class="btn btn-primary">Back to Upload</a>
+    </div>
+</body>
+</html>
