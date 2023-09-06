@@ -44,7 +44,7 @@ Running the Django Web App:
 1. Navigate to the OCR directory:
    cd OCR
 
-2. Run the Django development server more elegantly:
+2. Run the Django development server:
    ./runocrserver.sh
 
 3. A new browser tab will automatically open with the URL http://127.0.0.1:8000/ExtractDate/, allowing you to use the web app for date extraction.
