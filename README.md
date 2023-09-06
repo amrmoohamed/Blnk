@@ -39,19 +39,8 @@ Using main.py:
 
 6. Follow the on-screen menu to train the CRNN model, save/load the model, test it on test data, convert it to ONNX or TensorRT formats, and predict dates from images.
 
+
 Running the Django Web App:
-
-1. Navigate to the OCR directory:
-   cd OCR
-
-2. Run the Django development server:
-   ./runocrserver.sh
-
-3. A new browser tab will automatically open with the URL http://127.0.0.1:8000/ExtractDate/, allowing you to use the web app for date extraction.
-
-4. To manually stop the server, press Ctrl+C in the terminal.
-
-Opening the Django App in a New Browser Tab:
 
 To run the Django app and open it in a new browser tab with a single command, you can use the provided script:
 
