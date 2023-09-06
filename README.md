@@ -26,17 +26,18 @@ Using main.py:
 
 1. Specify the input shape and number of classes in the main.py file:
    input_shape = (40, 250, 1)
-   num_classes = 124 - 50  # Adapt this according to your dataset
+   
+   num_classes = 74 # From 1950 to 2023  
 
-2. Specify the path to your data:
+3. Specify the path to your data:
    data_path = 'OCR_Dates/'
 
-3. Open a terminal and navigate to the repository's root directory.
+4. Open a terminal and navigate to the repository's root directory.
 
-4. Run the main.py script:
+5. Run the main.py script:
    python main.py
 
-5. Follow the on-screen menu to train the CRNN model, save/load the model, test it on test data, convert it to ONNX or TensorRT formats, and predict dates from images.
+6. Follow the on-screen menu to train the CRNN model, save/load the model, test it on test data, convert it to ONNX or TensorRT formats, and predict dates from images.
 
 Running the Django Web App:
 
