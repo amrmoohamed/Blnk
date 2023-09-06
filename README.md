@@ -15,7 +15,7 @@ This project is designed to extract date information from identification documen
 ### Installation:
 
 1. Clone this repository to your local machine:
-   git clone https://github.com/yourusername/your-repo.git
+   git clone https://github.com/amrmoohamed/Blnk.git
 
 2. Install the required Python packages:
    pip install -r requirements.txt
